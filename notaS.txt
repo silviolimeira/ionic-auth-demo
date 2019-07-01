@@ -53,3 +53,8 @@ export interface AuthResponse {
     }
 }
 
+Next, generate the service using:
+$ ionic generate service auth/auth 
+
+update src/app/auth.service.ts and src/app/auth/auth.service.spec.ts 
+
