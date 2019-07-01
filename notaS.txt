@@ -78,6 +78,19 @@ $ curl -H "Content-Type: application/json" -d '{"email":"test@test.com","name":"
 Next, run this command to login the user:
 $ curl -H "Content-Type: application/json" -d '{"email":"test@test.com", "password":"test"}' http://localhost:3000/login
 
+#####
+Ionic 4 Forms Tutorial: Login & Register UI Example with theming
+https://www.techiediaries.com/ionic-ui-forms-theming/
+#####
+
+Creating the Register Page
+$ ionic generate page auth/register
+
+It will also update the src/app/app-routing.module.ts file to enable routing to this page by adding
+the following route:
+{ path:  'register', loadChildren:  './auth/register/register.module#RegisterPageModule' },
+
+Open the src/app/auth/register/register.page.ts file and import then inject AuthService and Router:
 
 
 
