@@ -29,3 +29,14 @@ Setting up Ionic Storage Module
 $ npm install --save @ionic/storage
 Next, include IonicStorageModule.forRoot() int te imports at auth.module
 
+Creating the Angular Authentication Service
+
+# ionic generate interface auth/user 
+
+export interface User {
+    id: number;
+    name: string;
+    email: string;
+    password: string;
+}
+
