@@ -58,3 +58,26 @@ $ ionic generate service auth/auth
 
 update src/app/auth.service.ts and src/app/auth/auth.service.spec.ts 
 
+#######
+Creating and Running an Express.js Authentication Server
+#######
+
+$ mkdir express-auth-demo-server
+$ cd express-auth-demo-server
+
+$ npm init -y 
+
+install the dependencies:
+
+$ npm install --save express body-parser sqlite3 bcryptjs jsonwebtoken cors
+
+You can use cURL to send POST requests to the authentication endpoints before creating the Ionic 4 UI.
+First run this command in a new terminal to register a user:
+$ curl -H "Content-Type: application/json" -d '{"email":"test@test.com","name":"test", "password":"test"}' http://localhost:3000/register
+
+Next, run this command to login the user:
+$ curl -H "Content-Type: application/json" -d '{"email":"test@test.com", "password":"test"}' http://localhost:3000/login
+
+
+
+
