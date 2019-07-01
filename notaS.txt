@@ -40,3 +40,16 @@ export interface User {
     password: string;
 }
 
+Also, you need generate an interface for server response:
+$ ionic generate interface auth/auth-response
+
+export interface AuthResponse {
+    user: {
+        id: number;
+        name: string;
+        email: string;
+        access_token: string;
+        expires_in: number;
+    }
+}
+
