@@ -24,3 +24,8 @@ $ ionic Server
 Creating an Angular Module
 $ ionic generate module auth
 
+Setting up Ionic Storage Module
+
+$ npm install --save @ionic/storage
+Next, include IonicStorageModule.forRoot() int te imports at auth.module
+
