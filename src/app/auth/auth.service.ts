@@ -13,7 +13,7 @@ import { THIS_EXPR } from "@angular/compiler/src/output/output_ast";
   providedIn: "root"
 })
 export class AuthService {
-  AUTH_SERVER_ADDRESS: string = "http://localhost:3000";
+  AUTH_SERVER_ADDRESS: string = "http://172.16.0.50:3000";
   authSubject = new BehaviorSubject(false);
 
   constructor(private httpClient: HttpClient, private storage: Storage) {}
