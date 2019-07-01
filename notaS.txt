@@ -1,0 +1,26 @@
+Ionic 4 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server
+https://www.techiediaries.com/ionic-jwt-authentication-httpclient/
+
+set ANDROID_SDK_ROOT=D:\Users\silvio.limeira\AppData\Local\Android\Sdk
+set ANDROID_HOME=D:\Users\silvio.limeira\AppData\Local\Android\Sdk
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_181\bin
+
+export ANDROID_SDK_ROOT=/d/Users/silvio.limeira/AppData/Local/Android/Sdk
+export ANDROID_HOME=/d/Users/silvio.limeira/AppData/Local/Android/Sdk
+export JAVA_HOME=/c/Program\ Files/Java/jdk1.8.0_181
+
+echo $ANDROID_SDK_ROOT
+echo $ANDROID_HOME
+ecch $JAVA_HOME
+
+$ npm install -g ionic
+
+Creating an Ionic 4 Project
+$ ionic start ionic-auth-demo blank --type=Angular
+
+$ cd ionic-auth-demo
+$ ionic Server
+
+Creating an Angular Module
+$ ionic generate module auth
+
